@@ -1,0 +1,26 @@
+/* Extra styles for the full site */
+.site-name a{color:#fff;text-decoration:none}
+.menu-toggle{display:none;background:#fff;color:var(--navy);border:0;border-radius:4px;padding:.5rem .9rem;font-weight:700;cursor:pointer}
+@media (max-width:47.99rem){.menu-toggle{display:inline-block}.menu{display:none;margin-top:.5rem}.menu.open{display:flex;flex-direction:column}}
+button{font:inherit;background:var(--teal);color:#fff;border:0;border-radius:6px;padding:.6rem 1.1rem;cursor:pointer;font-weight:600}
+button:hover:not(:disabled){background:var(--navy)}
+button:disabled{background:#9fb3ba;cursor:not-allowed}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #f2a900;outline-offset:2px}
+.btn-secondary{background:#fff;color:var(--navy);border:2px solid var(--navy)}
+.btn-secondary:hover:not(:disabled){background:var(--teal-light)!important;color:var(--navy)}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:1rem;margin:0 0 1rem}
+.card label{display:block;margin:0 0 .75rem;font-weight:600}
+.card input:not([type=checkbox]),.card select,.card textarea{display:block;width:100%;margin-top:.25rem;padding:.55rem;border:1px solid var(--ink-soft);border-radius:4px;font:inherit}
+.card input[type=checkbox]{margin-right:.5rem}
+.row{display:grid;gap:.5rem 1rem}
+@media(min-width:40rem){.row{grid-template-columns:1fr 1fr}.row button{justify-self:start}}
+.grid{display:grid;gap:1rem}
+@media(min-width:40rem){.grid{grid-template-columns:1fr 1fr}}
+.tile{text-decoration:none;color:var(--ink)}
+.tile:hover{border-color:var(--teal);box-shadow:0 2px 8px rgba(0,0,0,.1)}
+.muted{color:var(--ink-soft)}
+.error{color:var(--danger);font-weight:700}
+details{background:#fff;border:1px solid var(--line);border-radius:6px;padding:.7rem 1rem;margin:0 0 .6rem}
+summary{cursor:pointer;font-weight:700;color:var(--navy)}
+.tag{display:inline-block;background:var(--teal-light);color:var(--teal);border-radius:12px;padding:.1rem .6rem;margin:.1rem .2rem .1rem 0;font-size:.85rem}
+[hidden]{display:none!important}

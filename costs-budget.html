@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Costs & Budget | SafeHostel</title>
+  <link rel="stylesheet" href="check-before-you-pay.css">
+  <link rel="stylesheet" href="extra.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="site-name"><a href="index.html">SafeHostel</a></p>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+      <nav aria-label="Main menu">
+        <ul class="menu" id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="find-a-hostel.html">Find a Hostel</a></li>
+          <li><a href="check-before-you-pay.html">Check Before You Pay</a></li>
+          <li><a href="safety-tips.html">Safety &amp; Tips</a></li>
+          <li><a href="costs-budget.html" aria-current="page">Costs &amp; Budget</a></li>
+          <li><a href="help-contact.html">Help &amp; Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="content">
+    <h1>Costs &amp; Budget</h1>
+    <p class="lead">Rent is not the only cost. Enter your own figures (UGX) to see your real cost.</p>
+    <form id="budget" class="card row">
+      <label>Rent per semester <input type="number" min="0" name="rent" value="0"></label>
+      <label>Deposit (one time) <input type="number" min="0" name="deposit" value="0"></label>
+      <label>Electricity / water per month <input type="number" min="0" name="utils" value="0"></label>
+      <label>Transport per month <input type="number" min="0" name="transport" value="0"></label>
+      <label>Food per month <input type="number" min="0" name="food" value="0"></label>
+      <label>Months in semester <input type="number" min="1" max="6" name="months" value="4"></label>
+      <button type="submit">Calculate</button>
+      <button type="reset" class="btn-secondary">Clear</button>
+    </form>
+    <div id="budget-out" class="note" aria-live="polite" hidden></div>
+    <p class="muted">Ask about hidden fees: security, water, cleaning, electricity tokens.</p>
+  </main>
+  <footer class="site-footer">
+    <p>Made by Victoria University students. Last updated: November 2026.</p>
+    <p><a href="help-contact.html">Help &amp; Contact</a></p>
+  </footer>
+  <script src="site.js"></script>
+</body>
+</html>

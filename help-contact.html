@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Help & Contact | SafeHostel</title>
+  <link rel="stylesheet" href="check-before-you-pay.css">
+  <link rel="stylesheet" href="extra.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="site-name"><a href="index.html">SafeHostel</a></p>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+      <nav aria-label="Main menu">
+        <ul class="menu" id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="find-a-hostel.html">Find a Hostel</a></li>
+          <li><a href="check-before-you-pay.html">Check Before You Pay</a></li>
+          <li><a href="safety-tips.html">Safety &amp; Tips</a></li>
+          <li><a href="costs-budget.html">Costs &amp; Budget</a></li>
+          <li><a href="help-contact.html" aria-current="page">Help &amp; Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="content">
+    <h1>Help &amp; Contact</h1>
+    <section id="scammed"><h2>Already sent money to someone suspicious?</h2>
+      <ol class="steps"><li><strong>Stop paying.</strong> Send nothing more.</li><li><strong>Keep evidence:</strong> messages, numbers, receipts and mobile money SMS.</li><li><strong>Contact your mobile money provider</strong> quickly and report the transaction.</li><li><strong>Report to the police</strong> and tell the Dean of Students.</li></ol>
+      <div class="alert" role="note"><p><strong>In danger?</strong> Call Uganda Police emergency: <a href="tel:999">999</a> or <a href="tel:112">112</a>.</p></div></section>
+    <section id="contact"><h2>Send us a message</h2>
+      <form id="contact-form" class="card" novalidate>
+        <label>Your name <input name="name" required></label>
+        <label>Email <input name="email" type="email" required></label>
+        <label>Topic <select name="topic"><option>Report a fake agent</option><option>Suggest a hostel</option><option>Other</option></select></label>
+        <label>Message <textarea name="msg" rows="4" required></textarea></label>
+        <p id="form-error" class="error" role="alert" hidden></p>
+        <button type="submit">Send message</button>
+      </form>
+      <p id="form-ok" class="note" hidden></p></section>
+  </main>
+  <footer class="site-footer">
+    <p>Made by Victoria University students. Last updated: November 2026.</p>
+    <p><a href="help-contact.html">Help &amp; Contact</a></p>
+  </footer>
+  <script src="site.js"></script>
+</body>
+</html>

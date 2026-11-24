@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Find a Hostel | SafeHostel</title>
+  <link rel="stylesheet" href="check-before-you-pay.css">
+  <link rel="stylesheet" href="extra.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="site-name"><a href="index.html">SafeHostel</a></p>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+      <nav aria-label="Main menu">
+        <ul class="menu" id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="find-a-hostel.html" aria-current="page">Find a Hostel</a></li>
+          <li><a href="check-before-you-pay.html">Check Before You Pay</a></li>
+          <li><a href="safety-tips.html">Safety &amp; Tips</a></li>
+          <li><a href="costs-budget.html">Costs &amp; Budget</a></li>
+          <li><a href="help-contact.html">Help &amp; Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="content">
+    <h1>Find a Hostel</h1>
+    <p class="lead">Filter the list, then visit before you pay. <strong>Note:</strong> the entries below are sample data. Replace them with hostels your group has verified.</p>
+    <form id="filters" class="card row">
+      <label>Search name or area <input type="search" id="q" placeholder="e.g. Kisaasi"></label>
+      <label>Max price per semester (UGX) <input type="number" id="maxp" min="0" step="50000" placeholder="e.g. 600000"></label>
+      <label>Sort <select id="sort"><option value="price">Price: low to high</option><option value="dist">Closest to VU</option><option value="name">Name A-Z</option></select></label>
+      <label><input type="checkbox" id="guard"> Has a guard</label>
+      <label><input type="checkbox" id="water"> Water included</label>
+      <button type="reset" class="btn-secondary">Reset</button>
+    </form>
+    <p id="count" aria-live="polite" class="muted"></p>
+    <div id="results" class="grid"></div>
+    <p id="empty" class="note" hidden>No hostel matches. Try removing a filter.</p>
+    <p class="note"><a href="check-before-you-pay.html">Always follow the safe visit steps</a> before paying anyone.</p>
+  </main>
+  <footer class="site-footer">
+    <p>Made by Victoria University students. Last updated: November 2026.</p>
+    <p><a href="help-contact.html">Help &amp; Contact</a></p>
+  </footer>
+  <script src="site.js"></script>
+</body>
+</html>
